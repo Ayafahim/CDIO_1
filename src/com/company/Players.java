@@ -1,6 +1,7 @@
 package com.company;
-
 public class Players {
+
+
     String name;
     int points;
 
@@ -10,6 +11,8 @@ public class Players {
     Players(String n, int p){
         name = n;
         points = p;
+
+
     }
 
 
