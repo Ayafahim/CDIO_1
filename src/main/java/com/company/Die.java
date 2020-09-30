@@ -113,10 +113,9 @@ public class Die {
     }
 
     public static void endGame() {
-//        diceValue1 = random.nextInt(MAX - MIN + 1) + MIN;
-//        diceValue2 = random.nextInt(MAX - MIN + 1) + MIN;
-        diceValue1 = 6;
-        diceValue2 = 6;
+        diceValue1 = random.nextInt(MAX - MIN + 1) + MIN;
+        diceValue2 = random.nextInt(MAX - MIN + 1) + MIN;
+
 
         gui.setDice(diceValue1, diceValue2);
 
