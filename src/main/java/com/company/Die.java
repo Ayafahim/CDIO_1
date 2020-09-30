@@ -24,10 +24,10 @@ public class Die {
     public void roleDice() {
 
         if (turn == 0) {
-            calculateDice(gui_Player1, player1Points);
+            calculateDice(gui_Player1, gui_Player1.getBalance());
             turn = 1;
         } else if (turn == 1) {
-            calculateDice(gui_Player2, player2Points);
+            calculateDice(gui_Player2, gui_Player2.getBalance());
             turn = 0;
         }
 

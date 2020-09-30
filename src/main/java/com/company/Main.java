@@ -20,6 +20,7 @@ public class Main {
     public static GUI_Player gui_Player1 = new GUI_Player(spiller1, player1Points);
     public static GUI_Player gui_Player2 = new GUI_Player(spiller2, player2Points);
 
+    private static Die dice = new Die();
 
     public static void main(String[] args) {
 
@@ -35,9 +36,9 @@ public class Main {
 
             String knapString = gui.getUserSelection("Kast terning for", "Terning");
 
-            if (knapString == spiller1 && gui_Player1.getBalance() < 40) {
+            if (knapString == "Terning" && gui_Player1.getBalance() < 40) {
 
-                gui.setDice(4,4);
+                dice.roleDice();
 
 
             }
@@ -66,14 +67,6 @@ public class Main {
 
 
 
-
-
-
-
-
-
-        Die dice = new Die();
-        dice.roleDice();
     }
 
 
