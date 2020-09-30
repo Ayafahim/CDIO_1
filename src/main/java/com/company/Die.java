@@ -77,11 +77,12 @@ public class Die {
                 turn = 1;
             }
 
+
             if (ekstraTur == 24) {
                 if (turn == 0) {
-                    gui.showMessage(gui_Player1.getName() + " har vundet!");
+                    gui.showMessage(gui_Player1.getName() + " har vundet! Tillykke!!");
                 } else {
-                    gui.showMessage(gui_Player2.getName() + " har vundet!");
+                    gui.showMessage(gui_Player2.getName() + " har vundet! Tillykke!!");
                 }
                 isPlaying = false;
             }
@@ -124,14 +125,14 @@ public class Die {
             turn = 1;
             gui.showMessage(gui_Player1.getName() + "'s tur");
             if (diceValue1 == diceValue2) {
-                gui.showMessage(gui_Player1.getName() + " har vundet");
+                gui.showMessage(gui_Player1.getName() + " har vundet! Tillykke");
                 isPlaying = false;
             }
         } else if (turn == 1) {
             turn = 0;
             gui.showMessage(gui_Player2.getName() + "'s tur");
             if (diceValue1 == diceValue2) {
-                gui.showMessage(gui_Player2.getName() + " har vundet");
+                gui.showMessage(gui_Player2.getName() + " har vundet! Tillykke!");
                 isPlaying = false;
             }
         }
