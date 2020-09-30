@@ -11,6 +11,7 @@ public class Main {
     public static int player1Points = 0;
     public static int player2Points = 0;
 
+    public static boolean isPlaying = false;
 
     // Spørger brugerne om deres navne og gemmer dem i spiller1 og spiller2 variablerne
     public static String spiller1 = gui.getUserString("Indtast et navn");
@@ -32,39 +33,20 @@ public class Main {
 
         //input fra spillerne
 
-        while(gui_Player1.getBalance() < 40 || gui_Player2.getBalance() < 40) {
+        do {
 
-            String knapString = gui.getUserSelection("Kast terning for", "Terning");
+            String knapString = gui.getUserSelection("Kast terning", "Terning");
 
             if (knapString == "Terning" && gui_Player1.getBalance() < 40) {
-
                 dice.roleDice();
-
-
-            }
-
-            else if(knapString == spiller2 && gui_Player2.getBalance() < 40){
-
-                gui.setDice(5,5);
-
-            }
-
-            else{
-
-                if (gui_Player1.getBalance() >= 40){
-                    System.out.println(spiller1 + " har vundet!");
-                }
-                else {
-                    System.out.println(spiller2 + " har vundet!");
-                }
-
+            } else if (knapString == "Terning" && gui_Player2.getBalance() < 40) {
+                dice.roleDice();
+            } else {
+                dice.endGame();
             }
 
 
-
-        }
-
-
+        } while (isPlaying);
 
 
     }
