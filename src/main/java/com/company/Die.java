@@ -25,8 +25,10 @@ public class Die {
 
         if (turn == 0) {
             calculateDice(gui_Player1, player1Points);
+            turn = 1;
         } else if (turn == 1) {
             calculateDice(gui_Player2, player2Points);
+            turn = 0;
         }
 
 
