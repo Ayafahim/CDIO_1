@@ -11,9 +11,9 @@ public class Players {
     Players(String n, int p){
         name = n;
         points = p;
-
-
     }
+
+
 
 
 
