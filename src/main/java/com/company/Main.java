@@ -25,6 +25,11 @@ public class Main {
         gui_Player1.setBalance(0);
         gui_Player2.setBalance(0);
 
+        gui.setDice(1,1);
+
+
+
+
 
     }
 }
