@@ -11,7 +11,7 @@ public class Main {
     public static int player1Points = 0;
     public static int player2Points = 0;
 
-    public static boolean isPlaying = false;
+    public static boolean isPlaying = true;
 
     // Spørger brugerne om deres navne og gemmer dem i spiller1 og spiller2 variablerne
     public static String spiller1 = gui.getUserString("Indtast et navn");
