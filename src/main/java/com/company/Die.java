@@ -54,10 +54,10 @@ public class Die {
 
     // En metode der slår terningerne og sætter spillerens point til summen af terningerne samt regler for kast
     private static void calculateDice(GUI_Player player, int playerBalance) {
-//        diceValue1 = random.nextInt(MAX - MIN + 1) + MIN;
-//        diceValue2 = random.nextInt(MAX - MIN + 1) + MIN;
-        diceValue1 = 6;
-        diceValue2 = 6;
+        diceValue1 = random.nextInt(MAX - MIN + 1) + MIN;
+        diceValue2 = random.nextInt(MAX - MIN + 1) + MIN;
+
+
 
 
         if (diceValue1 == 1 && diceValue2 == 1) {
